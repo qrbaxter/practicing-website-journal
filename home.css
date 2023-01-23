@@ -1,0 +1,177 @@
+*, *::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #050505;
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  
+}
+nav ul {
+  padding: 0.5rem
+}
+
+a:hover {
+  color: darkorange;
+}
+
+/* typography */
+
+nav ul {
+  padding-top: 0.5em
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8475rem;
+  color: black;
+  text-decoration: none;
+}
+
+h2 {
+  margin: 0;
+}
+
+p {
+  line-height: 1.3;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+nav a{
+  color: black;
+  cursor: pointer;
+}
+
+nav a,
+.more-p {
+  font-weight: 700;
+}
+
+
+footer {
+  font-size: .75rem;
+}
+
+/* layout */
+
+.blog-title {
+  color: #141414;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.border {
+  border: 1px solid #202020;
+}
+
+nav ul,
+.header {
+  display: flex;
+}
+
+header {
+  padding: 1em;
+  margin-bottom: 2.125em;
+}
+
+.header {
+  justify-content: space-between;
+}
+
+nav ul {
+  gap: 2em;
+  margin: 0;
+}
+
+.hero-article {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31)), url(images/article-image-hero.png);
+  color: #ffffff;
+  background-size: cover;
+  margin-bottom: 1em;
+  padding: 2.125em 1em 1.5em 1em;
+}
+
+.more-p,
+footer {
+  text-align: center;
+}
+
+.more-p a{
+  color: #000000;
+  text-decoration-line: underline;
+}
+footer {
+  background: #202020;
+  padding: 2em;
+  color: #ececec;
+  margin-bottom: 0;
+}
+
+/* media-queries */
+
+@media (min-width: 768px) {
+  /* typography */
+  body {
+    font-size: 1.05rem;
+  }
+
+  .title {
+    font-size: 2.25rem;
+  }
+
+  h1,
+  .fa-blog {
+    font-size: 1.2525rem;
+  }
+
+  nav ul {
+    padding: 0.5rem
+  }
+  
+ 
+
+  .blogs-container{
+    margin: 2em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .more-p{ grid-column: 1 / -1;}
+
+  .hero-article {
+    padding-top: 15em;
+    padding-right: auto ;
+  }
+
+  .hero-article .container {
+    margin: 0;
+    max-width: 750px;
+    padding-left: 3.3125em;
+    padding-bottom: 3.6875em;
+  }
+
+  .footer {
+    width: 50%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;}
+  }
+ 
